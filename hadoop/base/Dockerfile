@@ -27,7 +27,7 @@ RUN apt-get install -y python3-pip
 RUN pip3 install --no-cache-dir --upgrade pyspark
 RUN update-alternatives --install /usr/bin/python python /usr/bin/python3 10
 
-ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/
+ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-arm64/
 
 RUN curl -O https://dist.apache.org/repos/dist/release/hadoop/common/KEYS
 
