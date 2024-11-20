@@ -12,7 +12,7 @@ services:
       - ./hadoop.env
     ports:
       - 50070:50070
-    # command: ["sh", "/init.sh"]
+    command: ["sh", "/init.sh"]
   datanode:
     image: docker.arvancloud.ir/bde2020/hadoop-datanode:1.1.0-hadoop2.8-java8
     depends_on: 
